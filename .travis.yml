@@ -9,7 +9,7 @@ env:
 
 install:
   - nvm install $NODE_VERSION
-  - npm install
+  - npm install macaca-cli macaca-electron -g
 
 script:
   - nvm use $NODE_VERSION
