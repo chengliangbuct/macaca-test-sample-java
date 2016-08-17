@@ -1,6 +1,16 @@
 language: java
-script: mvn -s settings.xml clean deploy
+
 jdk:
   - openjdk7
   - oraclejdk7
   - oraclejdk8
+env:
+  - NODE_VERSION=4.2.2
+
+install:
+  - nvm install $NODE_VERSION
+  - npm install
+
+script:
+  - nvm use $NODE_VERSION
+  - make test
