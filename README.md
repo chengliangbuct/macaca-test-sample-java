@@ -15,12 +15,12 @@ Start macaca server
 $ macaca server --verbose
 ```
 
+exec test
 
 ```shell
 $ mvn -s settings.xml clean install
 $ mvn test
 ```
-
 
 ## License
 
