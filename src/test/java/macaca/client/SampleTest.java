@@ -37,7 +37,8 @@ public class SampleTest {
 			.sendKeys("macaca")
 			.sleep(1000)
 			.elementById("su")
-			.click();
+			.click()
+			.sleep(3000);
 		
 		String html = driver.source();
 
