@@ -13,10 +13,10 @@ env:
   - NODE_VERSION=4.2
 
 install:
-  - nvm install $NODE_VERSION
-  - npm install macaca-cli macaca-electron -g
   - export DISPLAY=':99.0'
   - Xvfb :99 -screen 0 1366x768x24 > /dev/null 2>&1 &
+  - nvm install $NODE_VERSION
+  - npm install macaca-cli macaca-electron
 
 script:
   - nvm use $NODE_VERSION

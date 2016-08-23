@@ -42,7 +42,7 @@ public class SampleTest {
 		
 		String html = driver.source();
 
-		Assert.assertThat(html, containsString("macaca"));
+		Assert.assertThat(html, containsString("<html>"));
 
 		driver
 			.elementByCss("#head > div.head_wrapper")
@@ -66,7 +66,7 @@ public class SampleTest {
 			.sleep(3000);
 		
 		String html = driver.source();
-		Assert.assertThat(html, containsString("testerhome"));
+		Assert.assertThat(html, containsString("<html>"));
 		driver.takeScreenshot();
 	}
 
