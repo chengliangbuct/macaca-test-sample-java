@@ -4,7 +4,6 @@ npm_bin= $$(npm bin)
 all: test
 test: server
 	mvn -s settings.xml clean install
-	mvn test
 server:
 	@${npm_bin}/macaca server --verbose &
 .PHONY: test
