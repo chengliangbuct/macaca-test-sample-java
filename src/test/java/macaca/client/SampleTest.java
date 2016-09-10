@@ -34,7 +34,7 @@ public class SampleTest {
 	public void test_case_1() throws Exception {
 		driver
 			.elementById("kw")
-			.sendKeys("macaca")
+			.sendKeys("中文")
 			.sleep(1000)
 			.elementById("su")
 			.click()
@@ -60,14 +60,28 @@ public class SampleTest {
 		driver
 			.get("https://www.baidu.com")
 			.elementById("kw")
-			.sendKeys("testerhome")
+			.sendKeys("macaca")
 			.elementByXPath("//*[@id=\"kw\"]")
 			.click()
 			.sleep(3000);
 		
 		String html = driver.source();
 		Assert.assertThat(html, containsString("<html>"));
-		driver.takeScreenshot();
+		driver
+			.takeScreenshot()
+			.sleep(3000);
+	}
+	
+	@Test
+	public void test_case_3() throws Exception {
+		System.out.println("test case #3");
+		
+		driver
+			.get("https://www.baidu.com")
+			.elementsByTagName("a")
+			.getIndex(0)
+			.click()
+			.sleep(30000);
 	}
 
 	@After
