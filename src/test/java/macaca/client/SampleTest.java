@@ -71,17 +71,17 @@ public class SampleTest {
 			.takeScreenshot()
 			.sleep(3000);
 	}
-	
+
 	@Test
 	public void test_case_3() throws Exception {
 		System.out.println("test case #3");
 		
 		driver
 			.get("https://www.baidu.com")
-			.elementsByTagName("a")
+			.elementsByXPath("//*[@id=\"u1\"]/a")
 			.getIndex(0)
 			.click()
-			.sleep(30000);
+			.sleep(3000);
 	}
 
 	@After
