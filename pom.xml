@@ -11,7 +11,7 @@
 		<dependency>
 			<groupId>macaca.webdriver.client</groupId>
 			<artifactId>macacaclient</artifactId>
-			<version>1.0.6</version>
+			<version>1.0.10</version>
 		</dependency>
 		<dependency>
 			<groupId>com.alibaba</groupId>

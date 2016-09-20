@@ -27,6 +27,8 @@ public class SampleTest {
 		porps.put("platform", "ANY");
 		JSONObject desiredCapabilities = new JSONObject();
 		desiredCapabilities.put("desiredCapabilities", porps);
+		//desiredCapabilities.put("host", "127.0.0.1"); // custom remote host
+		//desiredCapabilities.put("port", 3456);        // custom remote port
 		driver.initDriver(desiredCapabilities).setWindowSize(1280, 800).get("https://www.baidu.com");
 	}
 
