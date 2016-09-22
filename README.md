@@ -7,6 +7,8 @@
 
 Macaca test sample
 
+[API Doc](//macacajs.github.io/wd.java/)
+
 ## Test
 
 Start macaca server

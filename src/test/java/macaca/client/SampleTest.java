@@ -11,6 +11,8 @@ import org.junit.Test;
 import com.alibaba.fastjson.JSONObject;
 import macaca.client.MacacaClient;
 
+// API doc https://macacajs.github.io/wd.java/
+
 public class SampleTest {
 
 	MacacaClient driver = new MacacaClient();
